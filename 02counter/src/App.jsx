@@ -14,7 +14,10 @@ function App() {
     if (counter>=20) {
       console.log("Value Cannot be Greater than 20.");
     } else {
-      setCounter(counter+1)
+      setCounter(prevCounter => prevCounter+1)
+      setCounter(prevCounter => prevCounter+1)
+      setCounter(prevCounter => prevCounter+1)
+      setCounter(prevCounter => prevCounter+1)
     }
   }
 
