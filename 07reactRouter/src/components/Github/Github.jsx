@@ -22,5 +22,5 @@ export default Github
 
 export const githubInfoLoader = async () => {
     const response = await fetch('https://api.github.com/users/dipakrathod09')
-    return response
+    return response.json()
 }
